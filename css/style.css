@@ -1,28 +1,10 @@
-:root {
-    --color-primary: #917758;
-    --color-secondary: #3c2915;
-    --color-primary-light: #f5eee6;
-    --color-dark-light: #191919;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {    
-    font-family: 'Poppins', sans-serif;;
-}
-
+@import 'generalConf.css';
 
 .container {    
-    width: 1170px;
+    width: 1023px;
     margin: 0 auto;
+    border: 3px solid red;
 }
-
-
-
 
 .home {
     height: 100vh; /*view-port height*/
@@ -32,24 +14,19 @@ body {
     background-attachment: fixed;
 }
 
-
 .home .header{
     padding: 30px 0;
 }
-
 
 .home .header .navbar {
     display: flex;
     justify-content: center;
 }
 
-
-
 .home .header .navbar ul {
     display: flex;
     list-style: none;
 } 
-
 
 .home .header .navbar ul li {
     display: flex;
@@ -58,11 +35,9 @@ body {
     width: 150px;
 }
 
-
 .home .header .navbar ul li .logo {
     margin: 0 30px;
 }
-
 
 .home .header .navbar ul li a {
     color: white;
@@ -79,11 +54,9 @@ body {
  
 }
 
-
 /*****************
     HOME - banner
 ******************/
-
 
 .home .banner {
     color: white;
@@ -115,11 +88,9 @@ body {
     margin-bottom: 15px;
 }
 
-
 /*********************
     SOBRE - Horários
 *********************/
-
 
 .about {    
     background-color: var(--color-primary);
@@ -476,4 +447,28 @@ body {
     .home .banner h1 {
         font-size: 60px;
     }
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #917758a3;
+    border: 5px solid var(--color-secondary);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.scroll-btn .bx {
+    font-size: 2.5rem;
+    color: var(--color-dark-light);
+}
+.scroll-btn:hover > .bx {
+    color: var(--color-secondary);
 }
