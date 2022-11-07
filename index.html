@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber shop do Maylon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/_base.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -161,7 +164,7 @@
             <h2>Faça um agendamento</h2>
             <img src="image/heading-ic-white.png" alt="faça um Agendamento">
 
-            <form>
+            <form id="formulario">
                 <div class="personal-data"> 
                     <div class="input-wrapper">
                         <label>Nome</label>
@@ -177,7 +180,7 @@
                     </div>
                     <div class="input-wrapper">
                         <label>Tipo de Serviços</label>
-                        <select>
+                        <select id="selectOption">
                             <option>Cortar Cabelo</option>
                             <option>Cortar Cabelo/Barba</option>
                         </select>
@@ -202,10 +205,10 @@
 
             <div class="gallery-wrapper">
                 <div>
-                    <img src="image/gallery-img1.png" alt="Galeria">
+                    <img src="image/gallery-img2.png" alt="Galeria">
                 </div>
                 <div>
-                    <img src="image/gallery-img2.png" alt="Galeria">
+                    <img src="image/gallery-img1.png" alt="Galeria">
                 </div>
                 <div>
                     <img src="image/gallery-img3.png" alt="Galeria">
@@ -279,5 +282,6 @@
         © 2021 Barber Shop - Todos os direitos reservados
     </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
